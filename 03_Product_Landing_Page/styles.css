@@ -1,0 +1,269 @@
+html,
+body {
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 55px;
+  padding: 0px 10px;
+}
+
+nav {
+  float: right;
+  margin-right: 0 10px;
+}
+
+nav a {
+  color: #a32145;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #c4ad88;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #c4ad88;
+
+  position: absolute;
+  top: -5px;
+  width: 0%;
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding-right: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+/* Features */
+
+#about-us {
+  margin-top: 200px;
+}
+
+.grid {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 20vw;
+  color: darkorange;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 25px;
+}
+
+/* Form */
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  margin-top: 10px;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(168, 32, 70);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  margin-top: 50px;
+}
+
+/* Testimonial */
+
+#testimonial {
+  margin-top: 75px;
+}
+
+/* Partnerships */
+
+#partnerships {
+  margin-top: 75px;
+}
+
+#partnerships img {
+  margin-left: 50px;
+  width: 30%;
+  padding: 5px 10px;
+}
+
+.partnerships {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partnership {
+  background: white;
+  margin-bottom: 2em;
+  flex: 0 1 24%;
+}
+
+.partnership a {
+  color: black;
+  text-decoration: none;
+}
+
+.partnership a:hover {
+  box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.partnership-content {
+  padding: 1.4em;
+}
+
+.partnership-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.partnership-content p {
+  font-size: 80%;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+footer {
+  background-color: #a32145;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer li {
+  padding: 0 10px;
+}
+
+footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+footer a:hover {
+  color: #c4ad88;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+  img {
+    margin: 0 auto;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  li {
+    padding-bottom: 5px;
+  }
+  ul {
+    flex-direction: column;
+  }
+
+  #about-us {
+    margin-top: 200px;
+  }
+
+  .features {
+    margin-top: 30px;
+  }
+  .icon {
+    display: none;
+  }
+}

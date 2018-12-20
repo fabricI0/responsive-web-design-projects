@@ -1,0 +1,106 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#navbar header,
+#main-doc header {
+  color: black;
+  font-size: 30px;
+  margin: 10px 10px 40px 10px;
+  text-align: left;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+/* The sidebar menu */
+#navbar {
+  height: 100%; /* Full-height if removed becomes "auto" height */
+  width: 380px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; 
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border-right: 3px solid;
+  border-color: rgb(0, 0, 0, 0.5);
+}
+
+#navbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-color: rgb(0, 0, 0, 0.5);
+  border-bottom-width: 0px;
+}
+
+#navbar a:hover {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+/* Style main and section */
+#main-doc {
+  margin-left: 380px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  font-size: 1.2em;
+}
+
+code {
+  display: inline-block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+table {
+  width: 80%;
+}
+
+th {
+  height: 50px;
+}
+
+td {
+  height: 50px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* @media query for phones and tablets */
+@media only screen and (max-width: 768px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+  #main-doc section {
+    /*     padding-top: 240px; */
+    border-top: none;
+    padding-top: 40px;
+  }
+}

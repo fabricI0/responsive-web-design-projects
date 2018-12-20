@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Survey Form</title>   
+  <meta name="description" content="CSS, Survey form, Responsive, Portfolio, FreeCodeCamp">
+  <meta name="author" content="Fabricio Garcia"> 
+  <!-- CSS Files -->
+  <link href="styles.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+  <h1 id="title">Student Satisfaction Survey</h1>
+  <div id="form-outer">
+    <p id="description"><strong>Let us know how we can improve - UnADM</strong></p>
+    <form action="survey" method="GET" id="survey-form">
+      <div class="survey-row">
+        <div class="labels">
+          <label id="name-label" for="name">*Name: </label>
+        </div>
+        <div class="inputs">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="survey-row">
+        <div class="labels">
+          <label id="email-label" for="name">*Email: </label>
+        </div>
+        <div class="inputs">
+          <input type="email" name="name" id="email" class="input-field" placeholder="Enter a valid email" required>
+        </div>
+      </div>
+      <div class="survey-row">
+        <div class="labels">
+          <label id="number-label" for="age">*Age: </label>
+        </div>
+        <div class="inputs">
+          <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Age" required>
+        </div>
+      </div>
+      <div class="survey-row">
+        <div class="labels">
+          <label for="role">*Which option best describes your current role?: </label>
+        </div>
+        <div class="inputs">
+          <select requred id="dropdown" name="role" class="dropdown">
+            <option disabled selected>Select an option</option>
+            <option value="full-time-student-employed">Part Time Student and Employed</option>
+            <option value="part-time-student-employed">Full Time Student and Employed</option>
+            <option value="full-time-student-unemployed">Part Time Student and Unemployed</option>
+            <option value="part-time-student-unemployed">Full Time Student and Unemployed</option>
+            <option value="no-answer">Prefer Not To Say</option>
+          </select>
+        </div>
+      </div>
+      <div class="survey-row">
+        <div class="labels">
+          <label for="complete-program">*How likely is that you complete your academic program?: </label>
+        </div>
+        <div class="inputs">
+          <ul id="completion" style="list-style: none">
+            <li class="radio"><label><input name="radio-buttons" value="1" type="radio">Definitely</label></li>
+            <li class="radio"><label><input name="radio-buttons" value="2" type="radio">Not Sure</label></li>
+            <li class="radio"><label><input name="radio-buttons" value="3" type="radio">Unlikely</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="survey-row">
+        <div class="labels">
+          <label for="improvements">Things that should be improved in the future<br>(Check all that apply): </label>
+        </div>
+        <div class="inputs">
+          <ul id="improvements" style="list-style: none">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox">Internship Programs</label></li>
+            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox">Better Scholarship Programs</label></li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox">Face-To-Face Events For Students</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox">National Mobility Programs For Students</label></li>
+            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox">International Mobility Programs For Students</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="survey-row">
+        <div class="labels">
+          <label for="comments">Share Any Comments or Suggestions: </label>
+        </div>
+        <div class="inputs">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">SUBMIT</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>This is just a sample form, submit button is not working</p>
+  </footer>
+
+</body>
+
+</html>
